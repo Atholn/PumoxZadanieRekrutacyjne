@@ -1,0 +1,12 @@
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.dll
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\obj\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.csprojAssemblyReference.cache
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\obj\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.AssemblyInfoInputs.cache
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\obj\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.AssemblyInfo.cs
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\bin\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.deps.json
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\bin\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.dll
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\bin\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.pdb
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.pdb
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\obj\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\obj\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.csproj.CopyComplete
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\obj\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.dll
+C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Infrastructure\obj\Debug\netcoreapp3.1\CompanyOrganizer.Infrastructure.pdb

@@ -1,5 +1,4 @@
-﻿
-using CompanyOrganizer.Infrastructure.DTO;
+﻿using CompanyOrganizer.Infrastructure.DTO;
 using CompanyOrganizer.Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -8,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 
-using System.Threading.Tasks;
 
 namespace CompanyOrganizer.Api.Controllers
 {
@@ -24,6 +22,7 @@ namespace CompanyOrganizer.Api.Controllers
         }
 
         //1.
+        [Authorize]
         [HttpPost("create")]
         [Authorize]
         public ActionResult Post([FromBody] CompanyDto model)
@@ -45,6 +44,7 @@ namespace CompanyOrganizer.Api.Controllers
         }
 
         //3.
+        [Authorize]
         [HttpPut("<id>")]
         public ActionResult Put(long id, [FromBody] CompanyDto model)
         {
@@ -57,6 +57,7 @@ namespace CompanyOrganizer.Api.Controllers
         }
 
         //4.
+        [Authorize]
         [HttpDelete("<id>")]
         public ActionResult Delete(long id)
         {
@@ -64,6 +65,7 @@ namespace CompanyOrganizer.Api.Controllers
             return NoContent();
         }
 
+        [Authorize]
         [HttpGet]
         public ActionResult Get()
         {
@@ -71,6 +73,7 @@ namespace CompanyOrganizer.Api.Controllers
             return Ok(companys);
         }
 
+        [Authorize]
         [HttpGet("id")]
         public ActionResult<CompanyDto> Get(long id)
         {
@@ -81,7 +84,6 @@ namespace CompanyOrganizer.Api.Controllers
             }
             return Ok(company);
         }
-
     }
 }
 

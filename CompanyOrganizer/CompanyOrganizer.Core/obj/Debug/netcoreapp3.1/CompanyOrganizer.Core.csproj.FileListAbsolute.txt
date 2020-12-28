@@ -10,3 +10,15 @@ C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.C
 C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Core\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.runtimeconfig.json
 C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Core\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.runtimeconfig.dev.json
 C:\Moje\Programowanie\Apka\API_1\CompanyApi3\CompanyOrganizer\CompanyOrganizer.Core\obj\Debug\netcoreapp3.1\CompanyOrganizer.Core.genruntimeconfig.cache
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.deps.json
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.runtimeconfig.json
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.runtimeconfig.dev.json
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.dll
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\bin\Debug\netcoreapp3.1\CompanyOrganizer.Core.pdb
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\obj\Debug\netcoreapp3.1\CompanyOrganizer.Core.csprojAssemblyReference.cache
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\obj\Debug\netcoreapp3.1\CompanyOrganizer.Core.AssemblyInfoInputs.cache
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\obj\Debug\netcoreapp3.1\CompanyOrganizer.Core.AssemblyInfo.cs
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\obj\Debug\netcoreapp3.1\CompanyOrganizer.Core.csproj.CoreCompileInputs.cache
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\obj\Debug\netcoreapp3.1\CompanyOrganizer.Core.dll
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\obj\Debug\netcoreapp3.1\CompanyOrganizer.Core.pdb
+C:\Moje\Programowanie\WEB\API\CompanyApi3-StabilnaWersjaKursAPI+PS\CompanyOrganizer\CompanyOrganizer.Core\obj\Debug\netcoreapp3.1\CompanyOrganizer.Core.genruntimeconfig.cache

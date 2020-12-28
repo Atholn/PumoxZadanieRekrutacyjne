@@ -13,7 +13,6 @@ namespace CompanyOrganizer.Infrastructure.Services
         long Create(CompanyDto companyDto);
         List<CompanyDto> Search(SearchDto searchDto);
         void Update(long Id, CompanyDto companyDto);
-        void Delete(long Id);
-   
+        void Delete(long Id);  
     }
 }

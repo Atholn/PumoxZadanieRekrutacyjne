@@ -5,11 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="C:\Users\Dell\.nuget\packages\microsoft.net.compilers\1.0.0\build\..\tools\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CompanyOrganizer.Core\CompanyOrganizer.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
   </ItemGroup>
 
 </Project>

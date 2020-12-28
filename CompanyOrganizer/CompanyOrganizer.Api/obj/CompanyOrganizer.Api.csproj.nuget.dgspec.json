@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Api\\CompanyOrganizer.Api.csproj": {}
+    "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Api\\CompanyOrganizer.Api.csproj": {}
   },
   "projects": {
-    "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Api\\CompanyOrganizer.Api.csproj": {
+    "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Api\\CompanyOrganizer.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Api\\CompanyOrganizer.Api.csproj",
+        "projectUniqueName": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Api\\CompanyOrganizer.Api.csproj",
         "projectName": "CompanyOrganizer.Api",
-        "projectPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Api\\CompanyOrganizer.Api.csproj",
+        "projectPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Api\\CompanyOrganizer.Api.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Api\\obj\\",
+        "outputPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj": {
-                "projectPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj"
+              "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj": {
+                "projectPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj"
               },
-              "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj": {
-                "projectPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj"
+              "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj": {
+                "projectPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj"
               }
             }
           }
@@ -110,14 +110,14 @@
         }
       }
     },
-    "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj": {
+    "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
+        "projectUniqueName": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
         "projectName": "CompanyOrganizer.Core",
-        "projectPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
+        "projectPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\obj\\",
+        "outputPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -184,14 +184,14 @@
         }
       }
     },
-    "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj": {
+    "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj",
         "projectName": "CompanyOrganizer.Infrastructure",
-        "projectPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj",
+        "projectPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\CompanyOrganizer.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\obj\\",
+        "outputPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -212,8 +212,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj": {
-                "projectPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj"
+              "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj": {
+                "projectPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj"
               }
             }
           }
@@ -231,6 +231,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             }
           },
           "imports": [

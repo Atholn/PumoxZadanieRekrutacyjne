@@ -1,5 +1,6 @@
 ﻿using CompanyOrganizer.Core.Models;
 using CompanyOrganizer.Core.Models.Enums;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -9,15 +10,14 @@ using System.Threading.Tasks;
 
 namespace CompanyOrganizer.Infrastructure
 {
-    public class CompanyContext :DbContext
+    public class CompanyContext :IdentityDbContext
     {
-        private string _connectionString = "Server =.; Database = CompanyDataBase; Trusted_Connection = True;";
         public DbSet<Company> Companies { get; set; }
         public DbSet<Worker> Workers { get; set; }
-
         public CompanyContext(DbContextOptions options): base (options)
         {
             var temp = Database;
+            Database.Migrate();
             Database.EnsureCreated();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,11 +31,7 @@ namespace CompanyOrganizer.Infrastructure
                 .HasConversion(
                 v => v.ToString(),
                 v => (Position)Enum.Parse(typeof(Position), v));
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(_connectionString);
+            base.OnModelCreating(modelBuilder);          
         }
     }
 }

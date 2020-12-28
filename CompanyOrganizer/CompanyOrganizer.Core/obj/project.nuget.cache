@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E/Y+rvWCprRedrr+mxdpDlhEZurN9RdT1NmvxZBbAvJ9IVnnOdxewOZXwOphCaHmtM3BuZyRCqR9GSzj4Znp+A==",
+  "dgSpecHash": "JyzSr5pyo3LXtH9P6ubIxLugys/CKvqIO238JdbmG7orzziHmR7rbT9f6uFFdA2GlmW8iCFd5NtW0ciudsdctA==",
   "success": true,
-  "projectFilePath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
+  "projectFilePath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

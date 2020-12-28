@@ -12,19 +12,16 @@ namespace CompanyOrganizer.Infrastructure.Mappers
         public CompanyProfile()
         {
             CreateMap<Company, CompanyDto>()
-                 .ForMember(c => c.Name, map => map.MapFrom(company => company.Name))
-                 .ForMember(c => c.EstablishmentYear, map => map.MapFrom(company => company.EstablishmentYear));
+                .ForMember(c => c.Name, map => map.MapFrom(company => company.Name))
+                .ForMember(c => c.EstablishmentYear, map => map.MapFrom(company => company.EstablishmentYear));
 
             CreateMap<CompanyDto, Company>()
                 .ForMember(c => c.Name, map => map.MapFrom(company => company.Name))
-                 .ForMember(c => c.EstablishmentYear, map => map.MapFrom(company => company.EstablishmentYear));
+                .ForMember(c => c.EstablishmentYear, map => map.MapFrom(company => company.EstablishmentYear));
 
             CreateMap<WorkerDto, Worker>()
-               .ForMember(c => c.PositionTitle, map => map.MapFrom(worker => worker.PositionTitle))
+                .ForMember(c => c.PositionTitle, map => map.MapFrom(worker => worker.PositionTitle))
                 .ReverseMap();
         }
-
-
-
     }
 }

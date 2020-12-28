@@ -5804,11 +5804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
+      "projectUniqueName": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
       "projectName": "CompanyOrganizer.Core",
-      "projectPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
+      "projectPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\CompanyOrganizer.Core.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Moje\\Programowanie\\Apka\\API_1\\CompanyApi3.3\\CompanyOrganizer\\CompanyOrganizer.Core\\obj\\",
+      "outputPath": "C:\\Moje\\Programowanie\\WEB\\API\\CompanyApi3-StabilnaWersjaKursAPI+PS\\CompanyOrganizer\\CompanyOrganizer.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

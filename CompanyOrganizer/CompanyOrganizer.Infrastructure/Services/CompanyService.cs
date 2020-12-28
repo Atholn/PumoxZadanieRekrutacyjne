@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CompanyOrganizer.Core.Models;
+using CompanyOrganizer.Core.Models.Enums;
 using CompanyOrganizer.Core.Repositories;
 using CompanyOrganizer.Infrastructure.DTO;
 using System;
@@ -12,7 +13,6 @@ namespace CompanyOrganizer.Infrastructure.Services
     {
         private readonly ICompanyRepository _companyRepository;
         private readonly IMapper _mapper;
-
         public CompanyService(ICompanyRepository companyRepository, IMapper mapper)
         {
             _companyRepository = companyRepository;
@@ -55,13 +55,19 @@ namespace CompanyOrganizer.Infrastructure.Services
 
         public  List<CompanyDto> Search(SearchDto searchDto)
         {
-            var companies = _companyRepository.Search(searchDto.Keyword, searchDto.EmployeeDateOfBirthFrom, searchDto.EmployeeDateOfBirthTo, searchDto.EmployeeJobTitles);
+            var companies = _companyRepository.Search(searchDto.Keyword, searchDto.EmployeeDateOfBirthFrom,
+                searchDto.EmployeeDateOfBirthTo, ParseEnum<Position>(searchDto.EmployeeJobTitles));
             return   _mapper.Map<List<CompanyDto>>(companies);
         }
 
         public void Update(long Id, CompanyDto companyDto)
         {
             _companyRepository.Update(Id, _mapper.Map<Company>(companyDto));
+        }
+
+        public static T ParseEnum<T>(string value)
+        {
+            return (T)Enum.Parse(typeof(T), value, true);
         }
     }
 }

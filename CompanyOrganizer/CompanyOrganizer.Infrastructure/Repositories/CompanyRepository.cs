@@ -1,5 +1,5 @@
-﻿
-using CompanyOrganizer.Core.Models;
+﻿using CompanyOrganizer.Core.Models;
+using CompanyOrganizer.Core.Models.Enums;
 using CompanyOrganizer.Core.Repositories;
 using CompanyOrganizer.Infrastructure.DTO;
 using Microsoft.EntityFrameworkCore;
@@ -12,9 +12,9 @@ namespace CompanyOrganizer.Infrastructure.Repositories
 {
     public class CompanyRepository : ICompanyRepository
     {
-       protected readonly CompanyContext _context;
+        protected readonly CompanyContext _context;
 
-        public CompanyRepository (CompanyContext context)
+        public CompanyRepository(CompanyContext context)
         {
             _context = context;
         }
@@ -29,32 +29,55 @@ namespace CompanyOrganizer.Infrastructure.Repositories
         {
             return _context.Companies
                 .Include(m => m.Workers)
-                 .ToList();
+                .ToList();
         }
 
-        public long  Add(Company company)
+        public long Add(Company company)
         {
             _context.Companies.Add(company);
             _context.SaveChanges();
             return _context.Companies.OrderBy(company => company.Id).LastOrDefault().Id; ;
         }
 
-        public List<Company> Search(string Keyword, DateTime EmployeeDateOfBirthFrom, DateTime EmployeeDateOfBirthTo, string EmployeeJobTitles)
+        public List<Company> Search(string Keyword, DateTime? EmployeeDateOfBirthFrom, DateTime? EmployeeDateOfBirthTo, Position? EmployeeJobTitles)
         {
-            return _context.Companies
-                   .FromSqlRaw(
-                   "SELECT c.*" +
-                   " FROM dbo.Companies c " +
-                   " JOIN dbo.Workers w ON w.CompanyId = c.Id" +
-                   " WHERE w.Name LIKE '%" + Keyword +
-                    "%' OR  w.LastName LIKE '%" + Keyword +
-                    "%' OR  c.Name LIKE '%" + Keyword +
-                    "%' OR w.PositionTitle Like '%" + EmployeeJobTitles +
-                    "%' OR  (w.DateOfBirth < '" + EmployeeDateOfBirthTo.ToString("yyyy-MM-dd HH:mm:ss.fff") +
-                    "' AND  w.DateOfBirth > '" + EmployeeDateOfBirthFrom.ToString("yyyy-MM-dd HH:mm:ss.fff") + "') ")
-                   .Include(w => w.Workers)
-                  .ToList();
-        }
+            return _context.Workers.Join(
+                  _context.Companies,
+                  company => company.CompanyId,
+                  worker => worker.Id,
+                  (worker, company) => new
+                  {
+                      Id = worker.Id,
+                      Company = company,
+                      CompanyId = company.Id,
+                      Workers = company.Workers,
+                      DateOfBirth = worker.DateOfBirth,
+                      LastName = worker.LastName,
+                      Name = worker.Name,
+                      PositionTitle = worker.PositionTitle
+                  })
+                   .Where(x =>
+                   (Keyword == null ||
+                   x.Company.Name.Contains(Keyword) ||
+                   x.Name.Contains(Keyword) ||
+                   x.LastName.Contains(Keyword) ||
+                   x.PositionTitle == EmployeeJobTitles || 
+                   (x.DateOfBirth >= EmployeeDateOfBirthFrom.Value &&
+                   x.DateOfBirth <= EmployeeDateOfBirthTo.Value))) 
+                   .ToList()
+                   .Select(x => new Company
+                 {
+                     Id = x.Company.Id,
+                     CreatedAt = x.Company.CreatedAt,
+                     UpdatedAt = x.Company.UpdatedAt,
+                     EstablishmentYear = x.Company.EstablishmentYear,
+                     Name = x.Company.Name,
+                     Workers = x.Company.Workers
+                 })
+                   .GroupBy(x => x.Id)
+                   .Select(x => x.FirstOrDefault())      
+                   .ToList();
+    }
 
         public void Delete(Company company)
         {

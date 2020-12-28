@@ -15,7 +15,6 @@ namespace CompanyOrganizer.Infrastructure.Mappers
             cfg.CreateMap<CompanyDto, Company>();
             cfg.CreateMap<Worker, WorkerDto>();
             cfg.CreateMap<WorkerDto, Worker>();
-
         }).CreateMapper();
     }
 }

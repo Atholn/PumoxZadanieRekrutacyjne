@@ -2,9 +2,11 @@ using AutoMapper;
 using CompanyOrganizer.Core.Models;
 using CompanyOrganizer.Core.Repositories;
 using CompanyOrganizer.Infrastructure;
+using CompanyOrganizer.Infrastructure.Helpers;
 using CompanyOrganizer.Infrastructure.Mappers;
 using CompanyOrganizer.Infrastructure.Repositories;
 using CompanyOrganizer.Infrastructure.Services;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,18 +33,48 @@ namespace CompanyOrganizer.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
 
-            services.AddDbContext<CompanyContext>(o=>
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TheCodeBuzz-Service", Version = "v1" });
+
+                c.AddSecurityDefinition("basic", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "basic",
+                    In = ParameterLocation.Header,
+                    Description = "Basic Authorization header using the Bearer scheme."
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                          new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "basic"
+                                }
+                            },
+                            new string[] {}
+                    }
+                });
+            });
+
+            services.AddDbContext<CompanyContext>(o =>
             {
                 o.UseSqlServer(Configuration["ConnectionStrings:SqlConnectionString"]);
             });
 
             services.AddScoped<ICompanyRepository, CompanyRepository>()
-                    .AddScoped<ICompanyService, CompanyService>();
-           
+                    .AddScoped<ICompanyService, CompanyService>()
+                    .AddScoped<IUserService, UserService>();
+
             var mappingConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new CompanyProfile());
@@ -52,17 +84,14 @@ namespace CompanyOrganizer.Api
             services.AddSingleton(mapper);
 
             services.AddMvc();
-
+            services.AddCors();
             services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CompanyOrganizer.Api", Version = "v1" });
-            });
 
+            services.AddAuthentication("BasicAuthentication")
+                      .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);        
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, CompanyContext context)
         {
             if (env.IsDevelopment())
             {
@@ -72,9 +101,19 @@ namespace CompanyOrganizer.Api
             }
 
             app.UseHttpsRedirection();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "TestService");
+            });
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -82,7 +121,14 @@ namespace CompanyOrganizer.Api
                 endpoints.MapControllers();
             });
 
-          
+            context.Database.Migrate();
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseEndpoints(endpoints => endpoints.MapControllers());
         }
     }
 }
